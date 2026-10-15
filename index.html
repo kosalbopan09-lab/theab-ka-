@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>សំបុត្រអាពាហ៍ពិពាហ៍ឌីជីថល</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        
+        :root {
+            --primary-gold: #bbbb11;
+            --dark-gold: #d89e17;
+            --khmer-red: #7A0016;
+            --light-bg: #FFFDF6;
+        }
+
+        body {
+            font-family: 'Kantumruy Pro', sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .invitation-card {
+            background: white;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+            border: 15px solid var(--khmer-red);
+            outline: 3px solid var(--primary-gold);
+            outline-offset: -10px;
+            padding: 40px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            position: relative;
+        }
+
+        /* គ្រឿងលម្អបែបក្បាច់ខ្មែរ */
+        .khmer-ornament {
+            font-family: 'Moul', serif;
+            color: var(--dark-gold);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Moul', serif;
+            color: var(--khmer-red);
+            font-size: 28px;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .wedding-title {
+            color: var(--dark-gold);
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .couple-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .couple-name {
+            font-family: 'Moul', serif;
+            font-size: 20px;
+            color: #222;
+        }
+
+        .vs {
+            font-family: 'Moul', serif;
+            color: var(--primary-gold);
+            font-size: 22px;
+        }
+
+        .details {
+            border-top: 1px dashed var(--primary-gold);
+            border-bottom: 1px dashed var(--primary-gold);
+            padding: 20px 0;
+            margin: 30px 0;
+        }
+
+        .date {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--khmer-red);
+            margin-bottom: 10px;
+        }
+
+        .location {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .btn-rsvp {
+            background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            font-size: 16px;
+            font-family: 'Kantumruy Pro', sans-serif;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(192, 146, 39, 0.404);
+            transition: 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-rsvp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(218, 216, 213, 0.986);
+        }
+        body {
+            background-image: url(IMAge.jpg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <div class="khmer-ornament">៚</div>
+        <h1>សិរីសួស្តីអាពាហ៍ពិពាហ៍</h1>
+        <div class="wedding-title">WEDDING INVITATION</div>
+        
+        <p>យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា ចូលរួមជាអធិបតី និងជារង្វាន់ជ័យក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍របស់កូនៗយើងខ្ញុំ៖</p>
+
+        <div class="couple-container">
+            <div class="couple-name">កូនប្រុស<br><span style="color: var(--khmer-red);">ផាន់ ផេតណារិទ្ធ</span></div>
+            <div class="vs">&</div>
+            <div class="couple-name">កូនស្រី<br><span style="color: var(--khmer-red);">ឡា ស្រីពីន</span></div>
+        </div>
+
+        <div class="details">
+            <div class="date"> ថ្ងៃ សុក្រ ១០រោច ខែ កត្ដិក ឆ្នាំ មមី អដ្ធស៌ក ព.ស ២៥៧០</div>
+            <div class="date"> ត្រូវនឹងថ្ងៃទី ០៤ ខែ ធ្នូ ឆ្នាំ ២០២៦</div>
+            <div class="location">
+                <strong>ទីតាំង៖</strong>
+            </div class="map-container">
+            
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3916.6122645549212!2d105.972!3d10.9926111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU5JzMzLjQiTiAxMDXCsDU4JzE5LjIiRQ!5e0!3m2!1sen!2skh!4v1792060986126!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        <p style="font-style: italic; margin-bottom: 25px;">វត្តមានរបស់លោកអ្នកគឺជាកិត្តិយសដ៏ខ្ពង់ខ្ពស់សម្រាប់គ្រួសារយើងខ្ញុំ។</p>
+        
+        <a href="#" class="btn-rsvp">បញ្ជាក់ការចូលរួម (RSVP)</a>
+    </div>
+
+</body>
+</html>
